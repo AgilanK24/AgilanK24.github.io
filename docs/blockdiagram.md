@@ -1,4 +1,4 @@
-![block diagram](images/BlockDiagram.drawio.png)
+![block diagram](images/block.png)
 <div align="center">
 *block diagram*
 </div>
