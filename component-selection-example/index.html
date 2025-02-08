@@ -12,13 +12,13 @@
       
       
       
-        <link rel="canonical" href="https://embedded-systems-design.github.io/template_report/charts/">
+        <link rel="canonical" href="https://embedded-systems-design.github.io/template_report/component-selection-example/">
       
       
-        <link rel="prev" href="../blockdiagram/">
+        <link rel="prev" href="../second-page/">
       
       
-        <link rel="next" href="../esp-32-table/">
+        <link rel="next" href="../subfolder/">
       
       
       <link rel="icon" href="../static/logo.png">
@@ -29,7 +29,7 @@
 
     
       
-        <title>Charts - EGR314 Report Template</title>
+        <title>Component Selection Example - EGR314 Report Template</title>
       
     
     
@@ -92,6 +92,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#examples" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -123,7 +128,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Charts
+              Component Selection Example
             
           </span>
         </div>
@@ -246,11 +251,9 @@
         
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="./" class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../charts/" class="md-tabs__link">
         
   
     
@@ -316,11 +319,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../component-selection-example/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
     
@@ -464,16 +469,9 @@
       
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../charts/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -482,7 +480,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -548,6 +545,8 @@
       
   
   
+    
+  
   
     
     
@@ -558,28 +557,40 @@
       
     
     
-      
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
-  
-  
-    <a href="../component-selection-example/" class="md-nav__link">
-      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="./" class="md-nav__link md-nav__link--active">
+              
   
   <span class="md-ellipsis">
     Component selection example
   </span>
   
 
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Component selection example
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
       
     </li>
   
@@ -646,6 +657,41 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    Examples
+  </a>
+  
+    <nav class="md-nav" aria-label="Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#style-1" class="md-nav__link">
+    Style 1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#style-2" class="md-nav__link">
+    Style 2
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -659,7 +705,7 @@
                   
 
   
-    <a href="https://github.com/embedded-systems-design/template_report/edit/main/docs/charts.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/embedded-systems-design/template_report/edit/main/docs/component-selection-example/index.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -667,35 +713,107 @@
   
 
 
-  <h1>Charts</h1>
+  <h1>Component Selection Example</h1>
 
-<pre class="mermaid"><code>graph LR
-  A[Start] --&gt; B{Error?};
-  B --&gt;|Yes| C[Hmm...];
-  C --&gt; D[Debug];
-  D --&gt; B;
-  B ----&gt;|No| E[Yay!];</code></pre>
-<pre class="mermaid"><code>sequenceDiagram
-  autonumber
-  Alice-&gt;&gt;John: Hello John, how are you?
-  loop Healthcheck
-      John-&gt;&gt;John: Fight against hypochondria
-  end
-  Note right of John: Rational thoughts!
-  John--&gt;&gt;Alice: Great!
-  John-&gt;&gt;Bob: How about you?
-  Bob--&gt;&gt;John: Jolly good!</code></pre>
-<pre class="mermaid"><code>stateDiagram-v2
-  state fork_state &lt;&lt;fork&gt;&gt;
-    [*] --&gt; fork_state
-    fork_state --&gt; State2
-    fork_state --&gt; State3
-
-    state join_state &lt;&lt;join&gt;&gt;
-    State2 --&gt; join_state
-    State3 --&gt; join_state
-    join_state --&gt; State4
-    State4 --&gt; [*]</code></pre>
+<h2 id="examples">Examples</h2>
+<h3 id="style-1">Style 1</h3>
+<blockquote>
+<p>This is the example found in the assignment, uses more html</p>
+</blockquote>
+<p><em>Table 1: Example component selection</em></p>
+<p><strong>External Clock Module</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Solution</strong></th>
+<th><strong>Pros</strong></th>
+<th><strong>Cons</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="glightbox" href="image1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="image1.png" /></a><br>Option 1.<br> XC1259TR-ND surface mount crystal<br>$1/each<br><a href="http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366">link to product</a></td>
+<td>* Inexpensive[^1]<br>* Compatible with PSoC<br>* Meets surface mount constraint of project</td>
+<td>* Requires external components and support circuitry for interface<br>* Needs special PCB layout.</td>
+</tr>
+<tr>
+<td><a class="glightbox" href="image3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="image3.png" /></a><br>* Option 2. <br>* CTX936TR-ND surface mount oscillator <br>* $1/each <br>* <a href="http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940">Link to product</a></td>
+<td>* Outputs a square wave <br>* Stable over operating temperature <br> * Direct interface with PSoC (no external circuitry required) range</td>
+<td>* More expensive <br>* Slow shipping speed</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Choice:</strong> Option 2: CTX936TR-ND surface mount oscillator</p>
+<p><strong>Rationale:</strong> A clock oscillator is easier to work with because it requires no external circuitry in order to interface with the PSoC. This is particularly important because we are not sure of the electrical characteristics of the PCB, which could affect the oscillation of a crystal. While the shipping speed is slow, according to the website if we order this week it will arrive within 3 weeks.</p>
+<h3 id="style-2">Style 2</h3>
+<blockquote>
+<p>Also acceptable, more markdown friendly</p>
+</blockquote>
+<p><strong>External Clock Module</strong></p>
+<ol>
+<li>
+<p>XC1259TR-ND surface mount crystal</p>
+<p><a class="glightbox" href="image1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="image1.png" /></a></p>
+<ul>
+<li>$1/each</li>
+<li><a href="http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366">link to product</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Inexpensive</td>
+<td>Requires external components and support circuitry for interface</td>
+</tr>
+<tr>
+<td>Compatible with PSoC</td>
+<td>Needs special PCB layout.</td>
+</tr>
+<tr>
+<td>Meets surface mount constraint of project</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>CTX936TR-ND surface mount oscillator</p>
+<p><a class="glightbox" href="image3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="image3.png" /></a></p>
+<ul>
+<li>$1/each</li>
+<li><a href="http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940">Link to product</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Outputs a square wave</td>
+<td>More expensive</td>
+</tr>
+<tr>
+<td>Stable over operating temperature</td>
+<td>Slow shipping speed</td>
+</tr>
+<tr>
+<td>Direct interface with PSoC (no external circuitry required) range</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+<p><strong>Choice:</strong> Option 2: CTX936TR-ND surface mount oscillator</p>
+<p><strong>Rationale:</strong> A clock oscillator is easier to work with because it requires no external circuitry in order to interface with the PSoC. This is particularly important because we are not sure of the electrical characteristics of the PCB, which could affect the oscillation of a crystal. While the shipping speed is slow, according to the website if we order this week it will arrive within 3 weeks.</p>
 
 
 
@@ -723,7 +841,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../blockdiagram/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Blockdiagram" rel="prev">
+          <a href="../second-page/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Second Page" rel="prev">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -733,20 +851,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Blockdiagram
+                Second Page
               </div>
             </div>
           </a>
         
         
           
-          <a href="../esp-32-table/" class="md-footer__link md-footer__link--next" aria-label="Next: ESP32 Table" rel="next">
+          <a href="../subfolder/" class="md-footer__link md-footer__link--next" aria-label="Next: This is the index to a subfolder" rel="next">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                ESP32 Table
+                This is the index to a subfolder
               </div>
             </div>
             <div class="md-footer__button md-icon">
