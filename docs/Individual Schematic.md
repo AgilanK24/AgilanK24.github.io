@@ -5,7 +5,7 @@ title: Agilan Kumar Team 305 Individual Schematic
 
 Here is the schematic for the HMI project using the ESP32-S3-WROOM.
 
-![Schematic Image](AKschematic/image.png)
+![Schematic Image](images/AKschematic.png)
 
 [Download the PDF of the schematic](schematic/schematic.pdf)
 
