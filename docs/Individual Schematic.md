@@ -9,4 +9,4 @@ Here is the schematic for the HMI project using the ESP32-S3-WROOM.
 
 [Download the PDF of the schematic](images/AK305schematic.pdf)
 
-[Download the project ZIP file](AK.zip)
+[Download the project ZIP file](images/AK.zip)
