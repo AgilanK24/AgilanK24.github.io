@@ -5,4 +5,4 @@ Bill of Materials
 
 Here is the list of parts I will be using in my sub-system
 
-![Bill of Materials Image](images/IndivdualBOM.png)
+![Bill of Materials Image](images/IndividualBOM.png)
