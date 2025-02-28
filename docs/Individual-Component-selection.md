@@ -40,3 +40,13 @@ title: Agilan Kumar Team 305 Individual Component Selection
 
 **Rationale:** Option 1 is the best choice cause it is a simple check in the subsystem and does not provide an importance in the subsystem, so 2A is more than enough
 
+
+**Voltage Regulator**
+
+| **Parts Choose**                                                                                                                                                                                      | **Pros**                                                                                                                                    | **Cons**                                                                                            |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| ![](images/.png)<br>Option 1.<br> LM2575D2T-3.3R4G<br>$3.32/each<br>[link to product](https://www.digikey.com/en/products/detail/onsemi/LM2575D2T-3-3R4G/1476688)                 | \* inexpensive for just one so multiple can be bought incase<br>\* Compatible with other subsystems<br>\* Input voltage is 4.75V and output can go up to 40V and current output is 1A                                               | \* Could burn out<br>\. |                                                        
+
+**Choice:** Option 1: SSD1306 0.96" OLED
+
+**Rationale:** Option 1 is the best choice since it is big enough to fit on the device. It will operate and show exactly what needs to be shown, it is also very clear as a display. What is shown on the display is very simple.
