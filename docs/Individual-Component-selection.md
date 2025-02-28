@@ -14,4 +14,16 @@ title: Agilan Kumar Team 305 Individual Component Selection
 
 **Choice:** Option 1: SSD1306 0.96" OLED
 
-**Rationale:** Option 1 is the best choice since it is big enough to fit on the device. It will operate and show exactly what needs to be shown, it is also very clear as a display. Very simple in what is shown on the display. 
+**Rationale:** Option 1 is the best choice since it is big enough to fit on the device. It will operate and show exactly what needs to be shown, it is also very clear as a display. What is shown on the display is very simple. 
+
+
+**Power Source**
+
+| **Parts Choosen**                                                                                                                                                                                      | **Pros**                                                                                                                                    | **Cons**                                                                                            |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| ![](images/.png)<br>Option 1.<br> 364-1254-ND<br>$6.46/each<br>[link to product](https://www.digikey.lv/en/products/detail/triad-magnetics/WSU120-0700/3094979)                 | \* inexpensive for just one<br>\* Compatible with other subsystems<br>\* Up to 12V/8.4W                                               | \* expensive if need more in quantity <br>\* shipping speed varies. |
+| ![](images/.png)<br>\* Option 2. <br>\* SWI3-5-N-MUB <br>\* $4.69/each <br>\* [Link to product](https://www.digikey.lv/en/products/detail/cui-inc/SWI3-5-N-MUB/7784529) | \* cheaper <br>\* Stable over operating temperature <br>\ | * output of 5V only <br>\* shipping speed varies                                                         |
+
+**Choice:** Option 1: 364-1254-ND
+
+**Rationale:** Option 1 is the best choice since it outputs 12V and will not make the subsystem falter in performance. 
