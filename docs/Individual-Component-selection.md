@@ -27,3 +27,16 @@ title: Agilan Kumar Team 305 Individual Component Selection
 **Choice:** Option 1: 364-1254-ND
 
 **Rationale:** Option 1 is the best choice since it outputs 12V and will not make the subsystem falter in performance. 
+
+
+**Fuses**
+
+| **Parts Choosen**                                                                                                                                                                                      | **Pros**                                                                                                                                    | **Cons**                                                                                            |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| ![](images/.png)<br>Option 1.<br> C1F 8<br>$0.34/each<br>[link to product](https://www.digikey.com/en/products/detail/bel-fuse-inc/C1F-8/4968262)                 | \* inexpensive for a bunch<br>\* up to 8A<br>\* Can handle the power going through the subsystem                                               | \* might not be enough for power <br>\* might burn up during use. |
+| ![](images/.png)<br>\* Option 2. <br>\* 0217002.MXP <br>\* $0.44/each <br>\* [Link to product](https://www.digikey.com/en/products/detail/littelfuse-inc/0217002-MXP/777545) | \* goes up to 2A <br>\* Stable over operating temperature <br>\ | * might be too small for subsystem <br>\* shipping speed varies                                                         |
+
+**Choice:** option 2: 0217002.MXP(fuse)
+
+**Rationale:** Option 1 is the best choice cause it is a simple check in the subsystem and does not provide an importantce in the subsystem, so 2A is more than enough
+
