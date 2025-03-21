@@ -29,7 +29,7 @@
 
     
       
-        <title>API - EGR314 Report Template</title>
+        <title>HMI API - EGR314 Report Template</title>
       
     
     
@@ -92,6 +92,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#hmi-subsystem-api" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -123,7 +128,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              API
+              HMI API
             
           </span>
         </div>
@@ -221,7 +226,7 @@
   
     
   
-  API
+  HMI API
 
       </a>
     </li>
@@ -465,16 +470,76 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    HMI API
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    API
+    HMI API
   </span>
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#message-structure" class="md-nav__link">
+    Message Structure
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#communication-flow" class="md-nav__link">
+    Communication Flow
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    Conclusion
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -692,6 +757,44 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#message-structure" class="md-nav__link">
+    Message Structure
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#communication-flow" class="md-nav__link">
+    Communication Flow
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    Conclusion
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -714,9 +817,46 @@
   
 
 
-  <h1>API</h1>
-
-
+<h1 id="hmi-subsystem-api">HMI Subsystem API</h1>
+<h2 id="introduction">Introduction</h2>
+<p>The HMI Subsystem processes user interactions using the ESP32-S3-WROOM-1 and an OLED display.</p>
+<h2 id="message-structure">Message Structure</h2>
+<p><strong>General Message Format</strong>
+| Byte | Description | Example Value |
+|------|------------|--------------|
+| Byte 1 | Message Type | 0x10 |
+| Byte 2 | Source ID | 0x01 (ESP32) |
+| Byte 3 | Destination ID | 0x02 (OLED) |
+| Byte 4 | Display Command (LSB) | 0x7A |
+| Byte 5 | Display Command (MSB) | 0x00 |
+| Byte 6 | End Byte | 0x42 |</p>
+<p><strong>ESP32 Sends Data to OLED</strong>
+| Byte | Variable Name | Data Type | Example Value |
+|------|--------------|----------|--------------|
+| 1 | Message Type | <code>uint8_t</code> | 0x20 |
+| 2 | Source ID | <code>uint8_t</code> | 0x01 |
+| 3 | Display Text (LSB) | <code>uint8_t</code> | 0x7A |
+| 4 | Display Text (MSB) | <code>uint8_t</code> | 0x00 |
+| 5 | Checksum | <code>uint8_t</code> | 0xA1 |
+| 6 | End Byte | <code>uint8_t</code> | 0x42 |</p>
+<p><strong>ESP32 Handles User Input from Buttons</strong>
+| Byte | Variable Name | Data Type | Example Value |
+|------|--------------|----------|--------------|
+| 1 | Message Type | <code>uint8_t</code> | 0x30 |
+| 2 | Source ID | <code>uint8_t</code> | 0x01 |
+| 3 | Button ID | <code>uint8_t</code> | 0x02 |
+| 4 | Button Pressed | <code>uint8_t</code> | 0x01 (Pressed) |
+| 5 | Checksum | <code>uint8_t</code> | 0xA1 |
+| 6 | End Byte | <code>uint8_t</code> | 0x42 |</p>
+<h2 id="communication-flow">Communication Flow</h2>
+<ol>
+<li>The ESP32 receives button inputs from the HMI subsystem.</li>
+<li>The ESP32 processes the command and updates the OLED.</li>
+<li>The OLED displays the corresponding information.</li>
+<li>The system logs the user interaction over UART for external monitoring.</li>
+</ol>
+<h2 id="conclusion">Conclusion</h2>
+<p>The HMI subsystem follows structured message formats, ensuring clear data transmission.</p>
 
 
 
