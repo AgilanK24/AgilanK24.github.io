@@ -29,7 +29,7 @@
 
     
       
-        <title>API - EGR314 Report Template</title>
+        <title>HMI Subsystem API - EGR314 Report Template</title>
       
     
     
@@ -92,6 +92,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#hmi-subsystem-api" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -123,7 +128,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              API
+              HMI Subsystem API
             
           </span>
         </div>
@@ -221,7 +226,7 @@
   
     
   
-  API
+  HMI Subsystem API
 
       </a>
     </li>
@@ -482,16 +487,122 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    HMI Subsystem API
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    API
+    HMI Subsystem API
   </span>
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#message-protocol" class="md-nav__link">
+    Message Protocol
+  </a>
+  
+    <nav class="md-nav" aria-label="Message Protocol">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-messages-sent-by-the-hmi" class="md-nav__link">
+    1. Messages Sent by the HMI
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Messages Sent by the HMI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#message-type-10-hmi-command-to-motor-driver" class="md-nav__link">
+    Message Type 10 - HMI Command to Motor Driver
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#message-type-20-hmi-request-to-sensor-subsystem" class="md-nav__link">
+    Message Type 20 - HMI Request to Sensor Subsystem
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-messages-received-by-the-hmi" class="md-nav__link">
+    2. Messages Received by the HMI
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Messages Received by the HMI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#message-type-30-sensor-data-update" class="md-nav__link">
+    Message Type 30 - Sensor Data Update
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#message-type-40-acknowledgment-from-mqtt" class="md-nav__link">
+    Message Type 40 - Acknowledgment from MQTT
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -728,6 +839,90 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#message-protocol" class="md-nav__link">
+    Message Protocol
+  </a>
+  
+    <nav class="md-nav" aria-label="Message Protocol">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-messages-sent-by-the-hmi" class="md-nav__link">
+    1. Messages Sent by the HMI
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Messages Sent by the HMI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#message-type-10-hmi-command-to-motor-driver" class="md-nav__link">
+    Message Type 10 - HMI Command to Motor Driver
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#message-type-20-hmi-request-to-sensor-subsystem" class="md-nav__link">
+    Message Type 20 - HMI Request to Sensor Subsystem
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-messages-received-by-the-hmi" class="md-nav__link">
+    2. Messages Received by the HMI
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Messages Received by the HMI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#message-type-30-sensor-data-update" class="md-nav__link">
+    Message Type 30 - Sensor Data Update
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#message-type-40-acknowledgment-from-mqtt" class="md-nav__link">
+    Message Type 40 - Acknowledgment from MQTT
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -750,9 +945,168 @@
   
 
 
-  <h1>API</h1>
-
-
+<h1 id="hmi-subsystem-api">HMI Subsystem API</h1>
+<h2 id="overview">Overview</h2>
+<p>This page documents the communication protocol between the HMI Subsystem and other system components, including the Motor Driver, MQTT, and Sensor subsystems. It specifies the message types, data format, and handling procedures.  </p>
+<hr />
+<h2 id="message-protocol">Message Protocol</h2>
+<p>Each message follows the class messaging protocol, structured within the "message data" area. This section outlines the messages <strong>sent and received</strong> by the HMI.</p>
+<h3 id="1-messages-sent-by-the-hmi">1. Messages Sent by the HMI</h3>
+<h4 id="message-type-10-hmi-command-to-motor-driver"><strong>Message Type 10 - HMI Command to Motor Driver</strong></h4>
+<p>Used to send speed control commands to the <strong>motor driver</strong>.  </p>
+<table>
+<thead>
+<tr>
+<th>Byte</th>
+<th>Variable Name</th>
+<th>Type</th>
+<th>Min Value</th>
+<th>Max Value</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>message_type</td>
+<td>uint8_t</td>
+<td>10</td>
+<td>10</td>
+<td>10</td>
+</tr>
+<tr>
+<td>2</td>
+<td>motor_id</td>
+<td>uint8_t</td>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+</tr>
+<tr>
+<td>3-4</td>
+<td>motor_speed</td>
+<td>int16_t</td>
+<td>-1000</td>
+<td>1000</td>
+<td>250</td>
+</tr>
+</tbody>
+</table>
+<h4 id="message-type-20-hmi-request-to-sensor-subsystem"><strong>Message Type 20 - HMI Request to Sensor Subsystem</strong></h4>
+<p>Requests sensor data from the <strong>sensor subsystem</strong>.  </p>
+<table>
+<thead>
+<tr>
+<th>Byte</th>
+<th>Variable Name</th>
+<th>Type</th>
+<th>Min Value</th>
+<th>Max Value</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>message_type</td>
+<td>uint8_t</td>
+<td>20</td>
+<td>20</td>
+<td>20</td>
+</tr>
+<tr>
+<td>2</td>
+<td>sensor_id</td>
+<td>uint8_t</td>
+<td>1</td>
+<td>8</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="2-messages-received-by-the-hmi">2. Messages Received by the HMI</h3>
+<h4 id="message-type-30-sensor-data-update"><strong>Message Type 30 - Sensor Data Update</strong></h4>
+<p>Received from the <strong>sensor subsystem</strong>, containing updated sensor readings.  </p>
+<table>
+<thead>
+<tr>
+<th>Byte</th>
+<th>Variable Name</th>
+<th>Type</th>
+<th>Min Value</th>
+<th>Max Value</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>message_type</td>
+<td>uint8_t</td>
+<td>30</td>
+<td>30</td>
+<td>30</td>
+</tr>
+<tr>
+<td>2</td>
+<td>sensor_id</td>
+<td>uint8_t</td>
+<td>1</td>
+<td>8</td>
+<td>3</td>
+</tr>
+<tr>
+<td>3-6</td>
+<td>sensor_value</td>
+<td>float (C: float)</td>
+<td>-100.0</td>
+<td>100.0</td>
+<td>25.75</td>
+</tr>
+</tbody>
+</table>
+<h4 id="message-type-40-acknowledgment-from-mqtt"><strong>Message Type 40 - Acknowledgment from MQTT</strong></h4>
+<p>Received when the <strong>MQTT subsystem</strong> successfully processes an HMI command.  </p>
+<table>
+<thead>
+<tr>
+<th>Byte</th>
+<th>Variable Name</th>
+<th>Type</th>
+<th>Min Value</th>
+<th>Max Value</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>message_type</td>
+<td>uint8_t</td>
+<td>40</td>
+<td>40</td>
+<td>40</td>
+</tr>
+<tr>
+<td>2</td>
+<td>command_id</td>
+<td>uint8_t</td>
+<td>10</td>
+<td>30</td>
+<td>10</td>
+</tr>
+<tr>
+<td>3</td>
+<td>status</td>
+<td>uint8_t</td>
+<td>0 (Fail)</td>
+<td>1 (Success)</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<hr />
 
 
 
