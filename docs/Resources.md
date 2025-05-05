@@ -92,5 +92,5 @@ def draw_filled_rect(x, y, w, h):
 
 
 ## Final CAD Files
-- [Download HMI_3D_CAD_Files.zip](resources/BoardHolder(1).SILDPRT.zip)
+- [Download HMI_3D_CAD_Files](images/boardhol3.pdf)
 
