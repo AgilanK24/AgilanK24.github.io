@@ -1,1 +1,1 @@
-[images/pcb.png]
+![](images/pcb.png)
