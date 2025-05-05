@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://embedded-systems-design.github.io/template_report/</loc>
+         <loc>https://embedded-systems-design.github.io/template_report/1.%20index/</loc>
+         <lastmod>2025-05-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://embedded-systems-design.github.io/template_report/2.%20blockdiagram/</loc>
          <lastmod>2025-05-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -47,11 +52,6 @@
     </url>
     <url>
          <loc>https://embedded-systems-design.github.io/template_report/Resources/</loc>
-         <lastmod>2025-05-05</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://embedded-systems-design.github.io/template_report/blockdiagram/</loc>
          <lastmod>2025-05-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
