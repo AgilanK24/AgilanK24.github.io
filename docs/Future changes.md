@@ -4,7 +4,7 @@ Our schematic implements an HMI using a 128x32 SPI OLED connected to an ESP32-S3
 
 ### Team Design Approach
 
-We focused on a modular, easy-to-understand layout to support STEM education. Using the ESP32-S3 gave us access to SPI, UART, I2C, PWM, and Wi-Fi (for MQTT) in a single chip. Our goal was to teach students how HMI, color sensors, motor drivers, and communication protocols interact in real-world systems. The design is simple but effective for hands-on learning. Also we changed what LCD display we used in the end due it being much easier to code and recieve messages much easier through all subsystems.
+We focused on a modular, easy-to-understand layout to support STEM education. Using the ESP32-S3 gave us access to SPI, UART, I2C, PWM, and Wi-Fi (for MQTT) in a single chip. Our goal was to teach students how HMI, color sensors, motor drivers, and communication protocols interact in real-world systems. The design is simple but effective for hands-on learning. We selected the ST7565R-based graphic LCD because it provided enough flexibility for both text and basic graphics without overwhelming the microcontroller or students with a complex GUI framework. However, we also considered the learning curve, which led to prioritizing simplicity in the schematic routing and using labeled headers for sensors and motors to encourage hands-on debugging.
 
 ### Version 2.0 Improvements
 
