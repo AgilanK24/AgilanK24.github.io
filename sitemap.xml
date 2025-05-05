@@ -16,11 +16,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://embedded-systems-design.github.io/template_report/4.%20Individual-Component-selection/</loc>
-         <lastmod>2025-05-05</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://embedded-systems-design.github.io/template_report/4.%20PCB/</loc>
          <lastmod>2025-05-05</lastmod>
          <changefreq>daily</changefreq>
@@ -32,6 +27,11 @@
     </url>
     <url>
          <loc>https://embedded-systems-design.github.io/template_report/6.%20API/</loc>
+         <lastmod>2025-05-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://embedded-systems-design.github.io/template_report/6.%20Individual-Component-selection/</loc>
          <lastmod>2025-05-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
