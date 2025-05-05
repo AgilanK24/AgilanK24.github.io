@@ -10,7 +10,7 @@ title: ESP32 Table
 | ESP32 S3 Datasheet URL                        | Yes    | Has more detail on functions                                                                              |
 | ESP32 S3 Technical Reference Manual URL       | Yes    | Has details on I/O multiplexing, USB, and others                                                          |
 | Vendor link                                   |[link to product](https://www.digikey.com/en/products/detail/espressif-systems/ESP32-S3-WROOM-1-N4/16162639)      | Digikey, Jameco, etc.  Do not paste links directly into the table.                       |
-| Code Examples                                 | ?      | url(s) for libraries on github or other sites related to the microcontroller and your planned peripherals |
+| Code Examples                                 |Resources| url(s) for libraries on github or other sites related to the microcontroller and your planned peripherals 
 | External Resources URL(s)                     | No     | Search on Google and YouTube for other resources for each specific microcontroller.                       |
 | Unit cost                                     | $5.06  | Find on Digikey, Jameco, MPJA, or octopart                                                                |
 | Absolute Maximum Current for entire IC        | 97mA   | Find in the microcontroller datasheet                                                                     |
