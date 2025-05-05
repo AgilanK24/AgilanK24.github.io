@@ -1,4 +1,4 @@
-## 🔋 HMI Subsystem Power Budget
+## HMI Subsystem Power Budget
 
 | Component              | Voltage (V) | Current Draw (mA) | Power (mW) | Notes                                      |
 |------------------------|-------------|-------------------|------------|--------------------------------------------|
