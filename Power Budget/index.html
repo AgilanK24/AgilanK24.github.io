@@ -92,6 +92,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#hmi-subsystem-power-budget" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -667,6 +672,17 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Power Budget
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -676,6 +692,30 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#hmi-subsystem-power-budget" class="md-nav__link">
+    🔋 HMI Subsystem Power Budget
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -837,6 +877,21 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#hmi-subsystem-power-budget" class="md-nav__link">
+    🔋 HMI Subsystem Power Budget
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -860,7 +915,65 @@
 
   <h1>Power Budget</h1>
 
-
+<h2 id="hmi-subsystem-power-budget">🔋 HMI Subsystem Power Budget</h2>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Voltage (V)</th>
+<th>Current Draw (mA)</th>
+<th>Power (mW)</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ESP32-S3-WROOM-1-N4</td>
+<td>3.3</td>
+<td>160 (avg)</td>
+<td>528</td>
+<td>Wi-Fi active, some peripherals enabled</td>
+</tr>
+<tr>
+<td>OLED SPI Display</td>
+<td>3.3</td>
+<td>10–15</td>
+<td>~50</td>
+<td>NHD-C12832A1Z-FSW-FBW-3V3 (ST7565R)</td>
+</tr>
+<tr>
+<td>Debug LED</td>
+<td>3.3</td>
+<td>5</td>
+<td>16.5</td>
+<td>With 330Ω current-limiting resistor</td>
+</tr>
+<tr>
+<td>Pushbutton (idle)</td>
+<td>3.3</td>
+<td>~0</td>
+<td>0</td>
+<td>No current when idle</td>
+</tr>
+<tr>
+<td>Voltage Regulator Loss</td>
+<td>3.3</td>
+<td>—</td>
+<td>~100</td>
+<td>Estimated regulator dropout + switching loss</td>
+</tr>
+<tr>
+<td><strong>Estimated Total</strong></td>
+<td>—</td>
+<td><strong>180–190 mA</strong></td>
+<td><strong>~700 mW</strong></td>
+<td>Based on typical operating conditions</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚠️ This budget assumes 3.3V regulated supply. Power draw may spike if Wi-Fi and peripherals are active simultaneously.</p>
+</blockquote>
 
 
 
