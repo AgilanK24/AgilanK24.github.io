@@ -21,6 +21,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://embedded-systems-design.github.io/template_report/4.%20PCB/</loc>
+         <lastmod>2025-05-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://embedded-systems-design.github.io/template_report/5.%20Individual%20BOM/</loc>
          <lastmod>2025-05-05</lastmod>
          <changefreq>daily</changefreq>
@@ -37,11 +42,6 @@
     </url>
     <url>
          <loc>https://embedded-systems-design.github.io/template_report/Message%20structure/</loc>
-         <lastmod>2025-05-05</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://embedded-systems-design.github.io/template_report/PCB/</loc>
          <lastmod>2025-05-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
