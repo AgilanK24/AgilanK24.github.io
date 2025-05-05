@@ -92,6 +92,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#hmi-functionality-and-design-discussion" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -519,6 +524,17 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Future changes
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -528,6 +544,50 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#hmi-functionality-and-design-discussion" class="md-nav__link">
+    HMI Functionality and Design Discussion
+  </a>
+  
+    <nav class="md-nav" aria-label="HMI Functionality and Design Discussion">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#team-design-approach" class="md-nav__link">
+    Team Design Approach
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#version-20-improvements" class="md-nav__link">
+    Version 2.0 Improvements
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -765,6 +825,41 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#hmi-functionality-and-design-discussion" class="md-nav__link">
+    HMI Functionality and Design Discussion
+  </a>
+  
+    <nav class="md-nav" aria-label="HMI Functionality and Design Discussion">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#team-design-approach" class="md-nav__link">
+    Team Design Approach
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#version-20-improvements" class="md-nav__link">
+    Version 2.0 Improvements
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -788,7 +883,16 @@
 
   <h1>Future changes</h1>
 
-
+<h2 id="hmi-functionality-and-design-discussion">HMI Functionality and Design Discussion</h2>
+<p>Our schematic implements an HMI using a 128x32 SPI OLED connected to an ESP32-S3-WROOM-1-N4. The display shows directions received via UART ("left", "right", "forward", "back"), providing real-time user feedback. A button and LED are included for testing and interaction. This setup meets product requirements by making system status visible and supporting debugging during development.</p>
+<h3 id="team-design-approach">Team Design Approach</h3>
+<p>We focused on a modular, easy-to-understand layout to support STEM education. Using the ESP32-S3 gave us access to SPI, UART, I2C, PWM, and Wi-Fi (for MQTT) in a single chip. Our goal was to teach students how HMI, color sensors, motor drivers, and communication protocols interact in real-world systems. The design is simple but effective for hands-on learning. Also we changed what LCD display we used in the end due it being much easier to code and recieve messages much easier through all subsystems.</p>
+<h3 id="version-20-improvements">Version 2.0 Improvements</h3>
+<p>If we build a new version:
+- <strong>Add a distance sensor</strong> to improve line-stopping accuracy and teach feedback-based control.
+- <strong>Use a simpler I2C LCD</strong> to reduce code complexity while keeping HMI functionality.
+- <strong>Upgrade to larger motors</strong> for more torque, allowing heavier loads and better performance.</p>
+<p>These changes would make the system more powerful and easier to program, improving both learning and functionality.</p>
 
 
 
